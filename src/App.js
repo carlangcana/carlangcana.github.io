@@ -14,9 +14,10 @@ function App() {
           <div className="px-8 py-6 text-left">
             <p><em className="text-blue-400">const</em> <span className="text-green-400">aboutMe</span> <span className="text-pink-500">=</span> <em className="text-blue-400">function</em>() {'{'}</p>
             <p>&nbsp;&nbsp;<span className="text-pink-500">return {'{'}</span> </p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;name: <span className="text-yellow-300">'Carl Angelo G. Angcana'</span>,</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;job: <span className="text-yellow-300">'Lab Instructor'</span>,</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;website: <span className="text-yellow-300">'<a href="https://www.credly.com/users/carl-angelo-angcana" className="text-yellow-300 hover:underline focus:border-none">Credly</a>'</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;name: <span className="text-yellow-300">'Carl Angcana'</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;role: <span className="text-yellow-300">'Educator'</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;hobbies: <span className="text-yellow-300">'Urban Skating'</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;badges: <span className="text-yellow-300">'<a href="https://www.credly.com/users/carl-angelo-angcana" target="_blank" className="text-yellow-300 hover:underline focus:border-none">Credly</a>'</span>,</p>
             <p>&nbsp;&nbsp;{'}'}</p>
             <p>{'}'}</p>
           </div>
