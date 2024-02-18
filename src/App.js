@@ -17,7 +17,7 @@ function App() {
             <p>&nbsp;&nbsp;&nbsp;&nbsp;name: <span className="text-yellow-300">'Carl Angcana'</span>,</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;role: <span className="text-yellow-300">'Educator'</span>,</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;hobbies: <span className="text-yellow-300">'Urban Skating'</span>,</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;badges: <span className="text-yellow-300">'<a href="https://www.credly.com/users/carl-angelo-angcana" target="_blank" className="text-yellow-300 hover:underline focus:border-none">Credly</a>'</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;badges: <span className="text-blue-400">'<a href="https://www.credly.com/users/carl-angelo-angcana" target="_blank" className="text-blue-400 hover:underline focus:border-none">Credly</a>'</span>,</p>
             <p>&nbsp;&nbsp;{'}'}</p>
             <p>{'}'}</p>
           </div>
