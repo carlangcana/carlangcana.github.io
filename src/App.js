@@ -16,7 +16,7 @@ function App() {
             <p>&nbsp;&nbsp;<span className="text-pink-500">return {'{'}</span> </p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;name: <span className="text-yellow-300">'Carl Angelo G. Angcana'</span>,</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;job: <span className="text-yellow-300">'Lab Instructor'</span>,</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;website: <span className="text-yellow-300">'<a href="https://carlangcana.github.io" className="text-yellow-300 hover:underline focus:border-none">https://carlangcana.github.io</a>'</span>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;website: <span className="text-yellow-300">'<a href="https://www.credly.com/users/carl-angelo-angcana" className="text-yellow-300 hover:underline focus:border-none">Credly</a>'</span>,</p>
             <p>&nbsp;&nbsp;{'}'}</p>
             <p>{'}'}</p>
           </div>
