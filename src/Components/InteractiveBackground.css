@@ -1,0 +1,54 @@
+@property --pull-x {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+@property --pull-y {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+
+.interactive-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(125deg, #f4a7a5 8%, #ffbb6e 63%, #ff861b 100%);
+}
+
+.color-region {
+  position: absolute;
+  inset: 0;
+
+  transition: --pull-x 650ms cubic-bezier(0.16, 1, 0.3, 1),
+    --pull-y 650ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.color-region--pink {
+  background: radial-gradient(ellipse 46% 63% at calc(10% + var(--pull-x)) calc(9% + var(--pull-y)), #f22285 0%, #ee609f 38%, transparent 78%);
+}
+.color-region--purple {
+  background: radial-gradient(ellipse 34% 70% at calc(43% + var(--pull-x)) calc(10% + var(--pull-y)), #b14c9e 0%, #c26ca4 33%, transparent 80%);
+}
+.color-region--magenta {
+  background: radial-gradient(ellipse 27% 61% at calc(64% + var(--pull-x)) calc(8% + var(--pull-y)), #e9007d 0%, #e92c87 32%, transparent 80%);
+}
+.color-region--yellow {
+  background: radial-gradient(ellipse 45% 64% at calc(10% + var(--pull-x)) calc(92% + var(--pull-y)), #ffce00 8%, #ffd136 33%, transparent 78%);
+}
+.color-region--cream {
+  background: radial-gradient(ellipse 29% 63% at calc(34% + var(--pull-x)) calc(83% + var(--pull-y)), #ffdd79 0%, #f3d299 34%, transparent 80%);
+}
+.color-region--red {
+  background: radial-gradient(ellipse 48% 79% at calc(90% + var(--pull-x)) calc(93% + var(--pull-y)), #f00c2a 8%, #fa4b20 42%, transparent 83%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .color-region {
+    --pull-x: 0px !important;
+    --pull-y: 0px !important;
+    transition: none;
+  }
+}

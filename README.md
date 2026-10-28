@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Carl Angcana profile
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Run locally
 
-## Available Scripts
+Use Node.js 22.12+ (Node.js 24 LTS recommended).
 
-In the project directory, you can run:
+```sh
+npm ci
+npm start
+```
 
-### `npm start`
+## Checks and deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+npm test
+npm run build
+npm run preview
+npm run deploy
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The deploy command publishes `build/` with gh-pages to the configured Git remote. The uploaded archive did not include Git configuration; initialize/connect your repository before deploying. The site base remains `/` for https://carlangcana.github.io.
 
-### `npm test`
+## Dependency update notes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Updated direct dependencies to current npm stable releases and regenerated the lockfile.
+- Replaced react-scripts with Vite and replaced its Jest runner with Vitest.
+- Integrated Tailwind CSS 4 using its Vite plugin.
+- Migrated Web Vitals callbacks to the current API (INP replaces FID).
+- Updated the profile test, which previously checked for an absent starter link.
+- Added the missing HTML entry point. JSX files now use `.jsx` extensions.
+- Recreated the pink background using layered CSS gradients; no JPEG is required. Nearby color regions ease toward the mouse pointer and return when it leaves the window. Touch devices show the static gradient, and reduced-motion preferences disable movement. Tune colors in `src/InteractiveBackground.css` and pointer influence in `src/InteractiveBackground.jsx`.
+- The original archive did not contain custom Tailwind configuration or other public assets. Restore any such assets from your original project if needed.
 
-### `npm run build`
+`node_modules` and generated build files are excluded from the ZIP. Install using `npm ci`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Background troubleshooting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Replace the entire extracted project rather than only the src folder. Confirm index.html is beside package.json and start with npm ci then npm start. Use the URL printed by Vite. Move the pointer between opposite corners to see the color regions follow. System Reduce Motion disables movement intentionally.
