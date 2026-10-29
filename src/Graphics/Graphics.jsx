@@ -3,7 +3,7 @@ import PhotoViewer from '../Components/PhotoViewer';
 export default function Graphics() {
   return (
     <>
-      <h3>Seminar Posters</h3>
+      <h3>Announcement Posters</h3>
       <p>Here are some of the posters I've designed for various seminars and events.</p>
       <PhotoViewer
         src="/graphics/posters.png"
@@ -21,6 +21,17 @@ export default function Graphics() {
         src="/graphics/pubmat.png"
         alt="Collection of social media graphics for various marketing campaigns."
         caption="Year updated: 2026"
+        width={1108}
+        height={889}
+      />
+
+      <hr style={{ border: 0, borderTop: '1px solid #ffffff20', margin: '24px 0' }} />
+      <h3>Leadership in Developing Promotional Ads</h3>
+      <p>Here is one of the promotional ads I've spearheaded as a designer at the Institute of Computer Science.</p>
+      <PhotoViewer
+        src="/graphics/promo.png"
+        alt="Promotional ad ICS Week 2024."
+        caption="Year updated: 2024"
         width={1108}
         height={889}
       />

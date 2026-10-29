@@ -1,0 +1,53 @@
+.toolkit {
+  margin: 32px 0;
+}
+
+.toolkit h3 {
+  font: inherit;
+  color: #e6edf3;
+}
+
+.toolkit-prompt {
+  color: #70e0ba;
+}
+
+.toolkit-list {
+  margin: 24px 0 0;
+}
+
+.toolkit-list > div {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ffffff14;
+}
+
+.toolkit-list dt {
+  color: #70e0ba;
+}
+
+.toolkit-list dd {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.toolkit-list strong {
+  display: block;
+  color: #e6edf3;
+  font-weight: 400;
+}
+
+.toolkit-list dd span {
+  display: block;
+  margin-top: 4px;
+  color: #a9b6c6;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .toolkit-list > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
